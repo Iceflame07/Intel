@@ -25,25 +25,25 @@ public class votingAppTest {
     @Test
     public void testForVoterName(){
         String voterName = "";
-        Candidate candidate = new Candidate();
-        candidate.getVoterName();
-        assertEquals(voterName, candidate.getVoterName());
+        VoterDetails voter = new VoterDetails();
+        voter.getVoterName();
+        assertEquals(voterName, voter.getVoterName());
     }
 
     @Test
     public void testThatCandidateIsQualifiedByAge() {
         int votingAge = 18;
-        Candidate candidate = new Candidate();
-        candidate.getVoterAge();
-        assertEquals(votingAge, candidate.getVoterAge());
+        VoterDetails voter = new VoterDetails();
+        voter.getVoterAge();
+        assertEquals(votingAge, voter.getVoterAge());
     }
 
     @Test
     public void testForVoterEmail(){
         String voterEmail = "";
-        Candidate candidate = new Candidate();
-        candidate.getVoterEmail();
-        assertEquals(voterEmail, candidate.getVoterEmail());
+        VoterDetails voter = new VoterDetails();
+        voter.getVoterEmail();
+        assertEquals(voterEmail, voter.getVoterEmail());
     }
 
     @Test
