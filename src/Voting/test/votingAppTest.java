@@ -9,22 +9,22 @@ public class votingAppTest {
 
 
     @Test
-    public void testVotingMachingCountIsZero() {
-        int votingMachine = 0;
+    public void testMachingCountIsZero() {
+        int machineCount = 0;
         votingAppTest votingApp = new votingAppTest();
-        assertEquals(votingMachine, 0);
+        assertEquals(machineCount, 0);
     }
 
     @Test
-    public void testVotingMachingCountIsOne() {
-        int votingMachine = 1;
+    public void testMachingCountIsOne() {
+        int machineCount = 1;
         votingAppTest votingApp = new votingAppTest();
-        assertEquals(votingMachine, 1);
+        assertEquals(machineCount, 1);
     };
 
     @Test
     public void testForVoterName(){
-        String voterName = "Tinubu, Olu-peters";
+        String voterName = "";
         Candidate candidate = new Candidate();
         candidate.getVoterName();
         assertEquals(voterName, candidate.getVoterName());
@@ -40,7 +40,7 @@ public class votingAppTest {
 
     @Test
     public void testForVoterEmail(){
-        String voterEmail = "Tinubu419@gmail.com";
+        String voterEmail = "";
         Candidate candidate = new Candidate();
         candidate.getVoterEmail();
         assertEquals(voterEmail, candidate.getVoterEmail());
